@@ -28,7 +28,7 @@
 header {
     font-family: "Rock Salt";
     text-align: center;
-    margin: 2vh auto;
+    padding: 2vh auto;
 }
 
 .hero .liefer {
@@ -88,6 +88,13 @@ p {
 .ugly {
     display: flex;
     justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.uglyMobile {
+    display: none;
 }
 
 .one img {
@@ -106,27 +113,28 @@ p {
     width: 70%;
 }
 
-.two {
+.two,
+.img2 {
     position: relative;
 }
 
 .local {
     position: absolute;
-    
+
     top: 0;
     right: 50%;
 }
 
 .deli {
     position: absolute;
-    
+
     top: 40%;
     right: -5%;
 }
 
 .orga {
     position: absolute;
-    
+
     top: 80%;
     right: 70%;
 }
@@ -135,7 +143,8 @@ p {
     display: flex;
     justify-content: center;
     background-color: var(--main-color);
-    color: white;;
+    color: white;
+    padding: 10px;
 }
 
 .three p {
@@ -144,7 +153,8 @@ p {
     width: 60%;
 }
 
-.pre_footer, footer {
+.pre_footer,
+footer {
     background-color: black;
     color: white;
 }
@@ -198,8 +208,115 @@ footer {
 }
 
 
-@media (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+    .ugly {
+        width: 100%;
+    }
 
-@media (max-width: 900px) {}
+    .uglyMobile {
+        display: none;
+    }
+}
 
-@media (max-width: 600px) {}
+@media screen and (max-width: 900px) {
+
+    .hero .liefer div img {
+        width: 100vw;
+    }
+
+    .ugly {
+        display: none;
+    }
+
+    .uglyMobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .images {
+        display: flex !important;
+        flex-direction: row;
+    }
+
+    .img1 img, .img2 img {
+        width: 40%;
+    }
+
+
+    .three {
+        width: 100%;
+    }
+
+    .liefer div:nth-of-type(1) {
+        display: none !important;
+    }
+
+    .howto h3 {
+        color: white;
+        background-color: var(--main-color);
+    }
+
+    .einsZwoDrei {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .einsZwoDrei div {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .einsZwoDrei h3 {
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-color: #dce0e6;
+    }
+
+    .hero .liefer div img {
+        width: 100vw;
+    }
+
+    .uglyMobile {
+        display: none;
+    }
+
+    .ugly {
+        display: block;
+    }
+
+    .ugly div {
+        width: 85%;
+    }
+
+    .three {
+        background-color: white;
+        color: black;
+        width: 80%;
+    }
+
+    .three p {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .icons {
+        width: 100%;
+    }
+
+    .icons img {
+        margin: 0 30px;
+    }
+}
