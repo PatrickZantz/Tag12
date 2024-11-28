@@ -1,0 +1,109 @@
+:root {
+    --main-color: #CBEA7B;
+    --h-f-green: #1A3129;
+    --space-l-r: 0 5vw
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.article,
+.aside,
+header,
+footer {
+
+    align-content: center;
+    text-align: center;
+}
+
+.article,
+header,
+footer {
+    height: 10vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    height: 60vh;
+    margin: 1vw 1vh;
+}
+
+header {
+    background-color: aqua;
+}
+
+main {
+    display: flex;
+    gap: 5px;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex: 2;
+}
+
+.article {
+    flex: 1 1 40%;
+}
+
+
+.article1 {
+    background-color: aquamarine;
+}
+
+.article2 {
+    background-color: orange;
+}
+
+.article3 {
+    background-color: fuchsia;
+}
+
+.article4 {
+    background-color: #CBEA7B;
+}
+
+.aside {
+    background-color: purple;
+    color: white;
+    flex: 1;
+}
+
+footer {
+    background-color: navy;
+    color: white;
+
+    /* flex-direction: column; */
+    /* order: -1; */
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column-reverse;
+        height: 30vh;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .articles {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        flex: 4;
+        /* display: block; */
+    }
+
+    main {
+        flex-direction: column;
+        flex: 1;
+    }
+
+}

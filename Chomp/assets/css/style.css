@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "Rock Salt";
+    src: url("../font/RockSalt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../font/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito_Reg";
+    src: url("../font/Nunito-Regular.ttf");
+}
+
+:root {
+    --main-color: #DF8480;
+    --h-f-green: #1A3129;
+    --space-l-r: 0 5vw
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: "Rock Salt";
+    text-align: center;
+    margin: 2vh auto;
+}
+
+.hero .liefer {
+    display: flex;
+}
+
+.hero .liefer div {
+    width: 50%;
+}
+
+.hero .liefer div img {
+    width: 50vw;
+    height: 100%;
+}
+
+.hero .liefer div:nth-of-type(1) {
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: end;
+}
+
+.hero .liefer div:nth-of-type(1) h3 {
+    width: 160px;
+    color: white;
+    text-align: right;
+    margin-right: 20px;
+}
+
+h3 {
+    font-family: "Nunito";
+    padding: 2vh 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+p {
+    font-family: "Nunito_Reg";
+    text-align: center;
+    font-size: 1rem;
+}
+
+.einsZwoDrei {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-content: center;
+    margin: 2%;
+}
+
+.einsZwoDrei div {
+    width: 30%;
+}
+
+.ugly {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.ugly div {
+    margin: 2vh;
+    width: 30%;
+    text-align: center;
+    align-content: center;
+}
+
+.two img {
+    width: 70%;
+}
+
+.two {
+    position: relative;
+}
+
+.local {
+    position: absolute;
+    
+    top: 0;
+    right: 50%;
+}
+
+.deli {
+    position: absolute;
+    
+    top: 40%;
+    right: -5%;
+}
+
+.orga {
+    position: absolute;
+    
+    top: 80%;
+    right: 70%;
+}
+
+.three {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: white;;
+}
+
+.three p {
+    align-content: center;
+    text-align: center;
+    width: 60%;
+}
+
+.pre_footer, footer {
+    background-color: black;
+    color: white;
+}
+
+.pre_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.pre_footer div {
+    margin: 5px;
+    width: 350px;
+}
+
+button {
+    border-radius: 25px;
+    height: 40px;
+    width: 100%;
+}
+
+.btnMail {
+    background-color: white;
+}
+
+.btnSignMail {
+    background-color: var(--main-color);
+
+    margin-bottom: 5vh;
+}
+
+footer {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.icons {
+    width: calc(100% - 170px);
+}
+
+.icons img {
+    margin: 10px;
+    width: 35px;
+}
+
+.copyright {
+    width: 200px;
+    padding: 20px;
+}
+
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 900px) {}
+
+@media (max-width: 600px) {}
