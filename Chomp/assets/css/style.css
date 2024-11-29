@@ -233,16 +233,16 @@ footer {
         flex-direction: column;
         width: 100%;
     }
-
+    
     .images {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     .img1 img, .img2 img {
-        width: 40%;
+        width: 40vw;
     }
-
 
     .three {
         width: 100%;
